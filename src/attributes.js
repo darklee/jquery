@@ -328,6 +328,9 @@ jQuery.extend({
 
 					} else {
 						elem[ name ] = value;
+						if ( elem.hasAttribute( name ) ) {
+							elem.setAttribute( name, value );
+						}
 					}
 				}
 
